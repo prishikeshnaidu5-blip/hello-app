@@ -1,5 +1,10 @@
-class HelloName {
+class HelloJoin {
     public static void main(String[] args) {
-        System.out.println("Hello " + args[0]);
+        if (args.length == 0) {
+            System.out.println("Hello, World!");
+        } else {
+            String names = String.join(", ", args);
+            System.out.println("Hello " + names);
+        }
     }
 }
